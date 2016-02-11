@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<head>
+  <link href="/normalize.css" rel="stylesheet">
+  <style>
+    header {
+      text-align: center;
+      background: url('https://scontent-lhr3-1.xx.fbcdn.net/hphotos-xtf1/t31.0-8/12640361_10209042013032200_1924575681919288010_o.jpg');
+      background-size: cover;
+      color: rgba(70,10,30,0.85);
+    }
+    a {
+      color: white;
+    }
+    h1 {
+      font-size: 70px;
+    }
+    img {
+      margin: 40px 0px 0px 0px;
+      border: 7px solid rgba(70,10,30,0.9);
+      border-radius: 500px;
+    }
+    ul {
+      padding: 10px;
+      background: rgba(70,10,30,0.5);
+    }
+    li {
+      display: inline;
+      padding: 0px 10px 0px 10px;
+    }
+    article {
+      max-width: 500px;
+      padding: 20px;
+      margin: 0 auto;
+      background: rgba(0,0,30,0.3);
+    }
+    body {
+      background: url('https://scontent-lhr3-1.xx.fbcdn.net/hphotos-xtf1/v/t1.0-9/12661838_10209041978271331_3633913346101665355_n.jpg?oh=88eaad4f94ef47758bb4f2fe2ec13196&oe=572B5033');
+      background-size: cover;
+    }
+    @media (max-width: 500px) {
+      h1 {
+        font-size: 36px;
+        padding: 5px;
+      }
+      li {
+        padding: 5px;
+        display: block;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://scontent-lhr3-1.xx.fbcdn.net/hphotos-xpa1/v/t1.0-9/1917542_10209021213192217_3441726937099949060_n.jpg?oh=354e1643c01cb7372a4cf60ef9f67b0e&oe=573A58D4"alt="Tara" width="200"height="200">
+    <h1>Tara's Blog</h1>
+    <ul>
+      <li><a href="#">About Me</a></li>
+      <li><a href="#">Artwork</a></li>
+      <li><a href="#">Recipes</a></li>
+      <li><a href="#">Short Stories</a></li>
+      <li><a href="#">Rants</a></li>
+    </ul>
+  </header>
+  <article>
+    <h2>The Tumblr Effect</h2>
+    <p>It means I can only think in memes and gifsets.</p>
+    <button>Like</button>
+  </article>
+
+  <script>
+    $("button").on("click", function() {
+      alert("Clicked!");
+    });
+  </script>
+</body>
